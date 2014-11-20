@@ -13,6 +13,13 @@ then
 fi
 
 # Install homebrew packages
-brew install grc coreutils spark
+brew install grc 
+brew install coreutils
+brew install spark
+brew install git
+brew install rbenv
+brew install maven
+brew install chromedriver
+brew install tig
 
 exit 0
