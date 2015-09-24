@@ -9,7 +9,7 @@
 if test ! $(which brew)
 then
   echo "  Installing Homebrew for you."
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" > /tmp/homebrew-install.log
+  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
 # Install homebrew packages
@@ -21,5 +21,6 @@ brew install rbenv
 brew install maven
 brew install chromedriver
 brew install tig
+brew install stunnel
 
 exit 0

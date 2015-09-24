@@ -10,42 +10,41 @@ filetype off                   " (vundle) required!
 "  Bundles
 " ----------------------------------------------------------------------------
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+"set rtp+=~/.vim/bundle/vundle/
+"call vundle#rc()
 
 " let Vundle manage Vundle
 " required!
-Bundle 'gmarik/vundle'
+"Bundle 'gmarik/vundle'
 
 " original repos on github
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-surround'
-Bundle 'vim-scripts/tComment'
-Bundle 'vim-scripts/StripWhiteSpaces'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'tpope/vim-rails.git'
-Bundle 'mattn/zencoding-vim'
-Bundle 'nathanaelkane/vim-indent-guides'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'ActionScript-3-Omnicomplete'
-Bundle 'fugitive.vim'
+"Bundle 'tpope/vim-fugitive'
+"Bundle 'tpope/vim-surround'
+"Bundle 'vim-scripts/tComment'
+"Bundle 'vim-scripts/StripWhiteSpaces'
+"Bundle 'Lokaltog/vim-easymotion'
+"Bundle 'tpope/vim-rails.git'
+"Bundle 'mattn/zencoding-vim'
+"Bundle 'nathanaelkane/vim-indent-guides'
+"Bundle 'kchmck/vim-coffee-script'
+"Bundle 'fugitive.vim'
 "Bundle 'ervandew/supertab'
 
 " vim-scripts repos
 " Bundle 'L9'
 " Bundle 'FuzzyFinder'
-Bundle 'snipMate'
+"Bundle 'snipMate'
 
 " non github repos
 " command-t will need installing, invoke
 " the command t help and follow the instructions to complie
-Bundle 'git://git.wincent.com/command-t.git'
+"Bundle 'git://git.wincent.com/command-t.git'
 
 " Colour schemes
 " Bundle 'desert.vim'
 " Bundle 'darkslategray.vim'
 " Bundle 'twilight.vim'
-Bundle 'twilight256.vim'
+"Bundle 'twilight256.vim'
 " Bundle 'Solarized'
 
 filetype plugin indent on     " required!
@@ -136,7 +135,7 @@ autocmd Filetype json setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 syntax enable
 set t_Co=256
 set background=dark
-colorscheme twilight256
+"colorscheme twilight256
 
 " Overide the colorschemes
 " hi StatusLine ctermbg=darkgrey ctermfg=white
@@ -151,7 +150,7 @@ if has('statusline')
   " Broken down into easily includeable segments
   set statusline=%<%f\    " Filename
   set statusline+=%w%h%m%r " Options
-  set statusline+=%{fugitive#statusline()} "  Git Hotness
+  "set statusline+=%{fugitive#statusline()} "  Git Hotness
   set statusline+=\ [%{&ff}/%Y]            " filetype
   set statusline+=\ [%{getcwd()}]          " current dir
   set statusline+=%=%-14.(%l,%c%V%)\ %p%%  " Right aligned file nav info

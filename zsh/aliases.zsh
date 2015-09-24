@@ -16,10 +16,15 @@ alias cuke="bundle exec cucumber"
 
 alias cop="rubocop"
 
-alias stun="cd /usr/local/Cellar/stunnel/4.56/var/run/stunnel/ && stunnel"
-alias ipup="cd $PROJECTS/tviplayer/ && git fetch upstream && git rebase upstream/develop"
-alias tipup="cd $PROJECTS/tip-git/ && git fetch upstream && git rebase upstream/master"
-alias bbup="cd $PROJECTS/bamboo/ && git fetch upstream && git rebase upstream/develop"
+alias ll='ls -la'
+
+alias stun="cd /usr/local/Cellar/stunnel/5.08/bin/ && stunnel"
+alias ipup="cd $PROJECTS/tviplayer/ && git checkout develop && git fetch upstream && git rebase upstream/develop"
+alias tipup="cd $PROJECTS/tip-git/ && git checkout master && git fetch upstream && git rebase upstream/master"
+alias bbup="cd $PROJECTS/bamboo/ && git checkout develop && git fetch upstream && git rebase upstream/develop"
+alias stup="cd $PROJECTS/responsive-web-smoke-tests/ && git checkout master && git fetch upstream && git rebase upstream/master"
+
+alias sb="ssh root@192.168.192.10"
 
 alias ip="cd $PROJECTS/tviplayer"
 alias tip="cd $PROJECTS/tip-git"
