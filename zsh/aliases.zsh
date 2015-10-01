@@ -9,9 +9,6 @@ compdef g=git
 alias rake='bundle exec rake'
 compdef rake=rake
 
-alias gr="grunt"
-compdef gr=grunt
-
 alias cuke="bundle exec cucumber"
 
 alias cop="rubocop"
