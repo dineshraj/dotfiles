@@ -34,3 +34,5 @@
     showOnStartup: false
   "release-notes":
     viewedVersion: "0.89.0"
+  react: {}
+  "tree-view": {}
