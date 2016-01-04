@@ -16,9 +16,9 @@ alias cop="rubocop"
 alias ll='ls -la'
 
 alias stun="cd /usr/local/Cellar/stunnel/5.08/bin/ && stunnel"
-alias ipup="cd $PROJECTS/tviplayer/ && git checkout develop && git fetch upstream && git rebase upstream/develop"
+alias ipup="cd $PROJECTS/tviplayer/ && git checkout master && git fetch upstream && git rebase upstream/master"
 alias tipup="cd $PROJECTS/tip-git/ && git checkout master && git fetch upstream && git rebase upstream/master"
-alias bbup="cd $PROJECTS/bamboo/ && git checkout develop && git fetch upstream && git rebase upstream/develop"
+alias bbup="cd $PROJECTS/bamboo/ && git checkout master && git fetch upstream && git rebase upstream/master"
 alias stup="cd $PROJECTS/responsive-web-smoke-tests/ && git checkout master && git fetch upstream && git rebase upstream/master"
 
 alias sb="ssh root@192.168.192.10"

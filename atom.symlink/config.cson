@@ -4,6 +4,7 @@
     fontFamily: "Menlo"
     invisibles: {}
     tabLength: 4
+    fontSize: 16
   core:
     ignoredNames: [
       ".bundle"
