@@ -1,6 +1,8 @@
 export EDITOR='atom'
 export SIKULIX_HOME="~/workspace/tip/features/libs/sikuli-java.jar"
 
+export code='open /Applications/Visual\ Studio\ Code.app'
+
 # always use color output for ls
 export CLICOLOR=1
 
@@ -23,3 +25,6 @@ export MAVEN_OPTS="-Xms256m -Xmx512m
     -Djavax.net.ssl.keyStoreType=PKCS12"
 
 export JAVA_HOME=$(/usr/libexec/java_home)
+
+export NVM_DIR="$HOME/.nvm"
+  . "$(brew --prefix nvm)/nvm.sh"

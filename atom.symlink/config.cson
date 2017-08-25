@@ -1,10 +1,21 @@
 "*":
+  "atom-material-ui":
+    colors:
+      abaseColor: "#607d8b"
+      predefinedColor: "Blue Grey"
+    tabs:
+      compactTabs: true
+    treeView:
+      compactList: true
+  autosave:
+    enabled: true
   core:
-    automaticallyUpdate: false
+    destroyEmptyPanes: false
     disabledPackages: [
       "background-tips"
       "exception-reporting"
       "metrics"
+      "linter-eslint"
     ]
     hideGitIgnoredFiles: true
     ignoredNames: [
@@ -16,17 +27,23 @@
       "vendor"
     ]
     projectHome: "/Users/dineshraj"
+    telemetryConsent: "no"
     themes: [
-      "unity-ui"
-      "glacier-syntax"
+      "one-dark-ui"
+      "base16-tomorrow-dark-theme"
     ]
   editor:
     fontFamily: "Menlo"
-    fontSize: 12
     invisibles: {}
     preferredLineLength: 120
     showIndentGuide: true
-  minimap: {}
+  linter: {}
+  "linter-ui-default":
+    panelHeight: 69
+  minimap:
+    plugins:
+      "git-diff": true
+      "git-diffDecorationsZIndex": 0
   react: {}
   "release-notes":
     viewedVersion: "0.89.0"
@@ -36,6 +53,11 @@
       "source.gfm"
       "text.git-commit"
     ]
+  tabs:
+    enableVcsColoring: true
   "tree-view": {}
   welcome:
     showOnStartup: false
+".diff.source":
+  editor:
+    preferredLineLength: 120
