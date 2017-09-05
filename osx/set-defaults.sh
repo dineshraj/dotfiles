@@ -60,7 +60,10 @@ defaults write com.apple.CrashReporter DialogType -string "none"
 #defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # Set a blazingly fast keyboard repeat rate
-#defaults write NSGlobalDomain KeyRepeat -int 0
+defaults write NSGlobalDomain KeyRepeat -int 2
+
+#Delay until releat
+defaults write NSGlobalDomain InitialKeyRepeat -int 15
 
 # Disable auto-correct
 #defaults write NSGlobalDomain NSAutomaticSpellingCorrectionEnabled -bool false
@@ -89,6 +92,9 @@ defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad Clicking -bool
 # Map bottom right Trackpad corner to right-click
 #defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadCornerSecondaryClick -int 2
 #defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad TrackpadRightClick -bool true
+
+#Trackpad speed
+defaults write -g com.apple.trackpad.scaling your_trackpad_speed 4
 
 ###############################################################################
 # Dock                                                                        #
