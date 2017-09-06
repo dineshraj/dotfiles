@@ -22,3 +22,6 @@ function sb() {
     cd $PROJECTS/tviplayer-docker/iplayer-sandbox && sh run.sh
   fi
 }
+
+
+alias git='hub'
