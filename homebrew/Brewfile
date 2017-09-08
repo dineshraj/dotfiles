@@ -8,19 +8,26 @@ brew install phantomjs
 brew install vim
 brew install postgres
 brew install hub
-brew install ngrok
 brew install chromedriver
 brew install stunnel
-
-brew tap caskroom/cask
-brew install brew-cask
 
 brew cask install google-chrome
 brew cask install atom
 brew cask install visual-studio-code
 brew cask install iterm2
-brew cask install skype
 brew cask install docker
 brew cask install firefox
 brew cask install kodi
 brew cask install slack
+brew cask install 1password
+brew cask install calibre
+brew cask install cyberduck
+brew cask install dropbox
+brew cask install rowanj-gitx
+brew cask install goofy
+brew cask install spectacle
+brew cask install sublime-text
+brew cask install vlc
+brew cask install whatsapp
+brew cask install utorrent
+brew cask install coconutbattery
