@@ -14,6 +14,7 @@ brew install stunnel
 brew cask install google-chrome
 brew cask install atom
 brew cask install visual-studio-code
+brew cask install sublime-text
 brew cask install iterm2
 brew cask install docker
 brew cask install firefox
@@ -26,8 +27,8 @@ brew cask install dropbox
 brew cask install rowanj-gitx
 brew cask install goofy
 brew cask install spectacle
-brew cask install sublime-text
 brew cask install vlc
 brew cask install whatsapp
 brew cask install utorrent
 brew cask install coconutbattery
+brew cask install steam
