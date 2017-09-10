@@ -5,6 +5,3 @@ open http://nodejs.org/download/
 # /usr/local/lib/node
 # /usr/local/lib/node_modules
 #
-
-
-npm install -g bbc/cosmos-cli

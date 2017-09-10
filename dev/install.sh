@@ -25,4 +25,4 @@ mkdir ~/workspace && cd ~/workspace
 git clone git@github.com:bbc/iplayer-web-app-playback.git
 git clone git@github.com:bbc/iplayer-web-app-playback-scripts.git
 
-
+npm install -g bbc/cosmos-cli

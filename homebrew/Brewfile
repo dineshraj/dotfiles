@@ -10,6 +10,7 @@ brew install postgres
 brew install hub
 brew install chromedriver
 brew install stunnel
+brew install ffmpeg
 
 brew cask install google-chrome
 brew cask install atom
@@ -22,6 +23,7 @@ brew cask install kodi
 brew cask install slack
 brew cask install 1password
 brew cask install calibre
+brew cask install sip
 brew cask install cyberduck
 brew cask install dropbox
 brew cask install rowanj-gitx
@@ -32,3 +34,6 @@ brew cask install whatsapp
 brew cask install utorrent
 brew cask install coconutbattery
 brew cask install steam
+brew cask install cyberduck
+brew cask install alfred
+brew cask install caskroom/cask/openemu
