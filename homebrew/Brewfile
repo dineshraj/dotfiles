@@ -12,6 +12,7 @@ brew install chromedriver
 brew install stunnel
 brew install ffmpeg
 
+brew cask install ngrok
 brew cask install google-chrome
 brew cask install atom
 brew cask install visual-studio-code

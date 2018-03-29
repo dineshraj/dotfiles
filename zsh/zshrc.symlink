@@ -47,6 +47,6 @@ unset config_files
 unsetopt correct_all
 unsetopt correct
 
+eval "$(cosmos completion)"
 
-export BAMBOO_URL=http://ibl.api.bbci.co.uk/ibl/v1/
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

@@ -12,6 +12,19 @@ Host *
   IdentityFile ~/.ssh/id_rsa
 EOT
 
+
+cat <<EOT >> ~/.ssh/config
+Host ?.access.*.cloud.bbc.co.uk
+  IdentityFile ~/.ssh/id_rsa
+
+Host *,??-*-?
+  User dineshraj.goomany@bbc.co.uk
+  IdentityFile ~/.ssh/id_rsa
+  ProxyCommand >&1; h="%h"; r=${h##*,}; i=${h%%,*}; v=$(($(cut -d. -f2 <<<$i) / 32)); exec ssh -q -p 22000 bastion-tunnel@$v.access.$r.cloud.bbc.co.uk nc $i %p
+  StrictHostKeyChecking no
+  UserKnownHostsFile /dev/null
+EOT
+
 ssh-add -K ~/.ssh/id_rsa
 
 curl -u "dineshraj" \
@@ -19,10 +32,9 @@ curl -u "dineshraj" \
     https://api.github.com/user/keys
 
 
-
-
 mkdir ~/workspace && cd ~/workspace
 git clone git@github.com:bbc/iplayer-web-app-playback.git
 git clone git@github.com:bbc/iplayer-web-app-playback-scripts.git
 
 npm install -g bbc/cosmos-cli
+npm install -g @tviplayer/forge-release-cli
