@@ -1,4 +1,10 @@
 "*":
+  "activate-power-mode":
+    plugins:
+      playAudio: true
+      screenShake: true
+    screenShake:
+      enabled: false
   "atom-material-ui":
     colors:
       abaseColor: "#607d8b"
@@ -35,8 +41,8 @@
       "base16-tomorrow-dark-theme"
     ]
   editor:
-    fontFamily: "Menlo"
-    fontSize: 13
+    fontFamily: "Operator Mono"
+    fontSize: 16
     invisibles: {}
     preferredLineLength: 120
     showIndentGuide: true

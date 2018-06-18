@@ -50,3 +50,6 @@ unsetopt correct
 eval "$(cosmos completion)"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+### Added by IBM Cloud CLI
+source /usr/local/Bluemix/bx/zsh_autocomplete
