@@ -3,8 +3,7 @@
     plugins:
       playAudio: true
       screenShake: true
-    screenShake:
-      enabled: false
+    screenShake: {}
   "atom-material-ui":
     colors:
       abaseColor: "#607d8b"

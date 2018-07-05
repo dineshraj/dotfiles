@@ -1,0 +1,100 @@
+{
+  "name": "iplayer-web-app-homepage",
+  "version": "1.0.0",
+  "description": "This is the application that manages the serving of the iPlayer homepage.",
+  "main": "index.js",
+  "scripts": {
+    "precompile": "npm run clean && npm run precompile:jsx && npm run precompile:page",
+    "precompile:dev": "npm run precompile:jsx && npm run precompile:page:dev",
+    "precompile:jsx": "precompile -q -d ./views",
+    "precompile:page": "bundlr --format iife --name page --input scripts/homepage.js --output dist/homepage.js",
+    "precompile:page:dev": "bundlr --development --format iife --name page --input scripts/homepage.js --output dist/homepage.js",
+    "start": "node server.js",
+    "debug": "NODE_ENV=dev npx nodemon -e js,jsx,json,scss --ignore 'views/**/*.js' --ignore 'dist/**/*.js' --exec npm run debug:start",
+    "debug:start": "npm run precompile:dev && node server.js",
+    "pretest": "npm run precompile",
+    "test": "NODE_ENV=mocha mocha 'test/!(e2e)/**/*.js' 'test/*.js'",
+    "test:e2e": "mocha 'test/e2e/**/*.js' 'test/e2e/*.js' --opts test/e2e/mocha.opts",
+    "posttest": "npm run lint && npm run jsonlint",
+    "lint": "eslint . --ext=jsx --ext=js",
+    "jsonlint": "jsonlint --dir ./config",
+    "coverage": "npx nyc --reporter=lcov --reporter=cobertura npm test",
+    "spec": "speculate --release $BUILD_NUMBER",
+    "clean": "rm -rf ./views/*.js ./views/**/*.js ./views/**/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BBC/iplayer-web-app-homepage.git"
+  },
+  "author": "responsive-iplayer@lists.forge.bbc.co.uk",
+  "license": "BBC",
+  "bugs": {
+    "url": "https://github.com/BBC/iplayer-web-app-homepage/issues"
+  },
+  "homepage": "https://github.com/BBC/iplayer-web-app-homepage",
+  "dependencies": {
+    "@bbc/iplayer-web-components": "^35.2.0",
+    "@bbc/iplayer-web-components-renderer": "^2.1.0",
+    "@bbc/iplayer-web-flagpole-client": "^2.0.1",
+    "@bbc/iplayer-web-frontend": "^12.2.1",
+    "@bbc/iplayer-web-idcta-client": "^2.0.0",
+    "@bbc/iplayer-web-legacy-static-assets": "^22.1.0",
+    "@bbc/iplayer-web-optimizely-prefetcher": "^3.3.0",
+    "@bbc/iplayer-web-orbit-prefetcher": "^3.4.0",
+    "@bbc/iplayer-web-page-builder": "^18.5.0",
+    "@bbc/iplayer-web-presenter-footer": "^4.1.1",
+    "@bbc/iplayer-web-presenter-navigation": "^4.4.0",
+    "@bbc/iplayer-web-react": "16.4.0",
+    "@bbc/iplayer-web-routes": "^2.1.0",
+    "@bbc/iplayer-web-translate": "^3.1.0",
+    "@ibl/client": "^4.5.0",
+    "@ibl/json-lint": "^1.0.1",
+    "@ibl/logger": "^3.0.0",
+    "@ibl/rest-client": "^9.14.1",
+    "@ibl/set-route-name": "^2.0.0",
+    "@ibl/stats": "^5.0.0",
+    "boom": "^4.3.1",
+    "classnames": "^2.2.5",
+    "config": "^1.10.0",
+    "express": "^4.13.1",
+    "node-sass": "^4.9.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-thunk": "2.2.0",
+    "reselect": "^3.0.1"
+  },
+  "eslintConfig": {
+    "extends": "iplayer-jsx"
+  },
+  "spec": {
+    "requires": [
+      "iplayer-node-service-config",
+      "ibl-collectibl",
+      "ibl-sysadmin",
+      "tviplayer-app-logger"
+    ],
+    "buildRequires": [
+      "python",
+      "nodejs-devel"
+    ],
+    "nodeVersion": "< 2:9.0.0"
+  },
+  "private": true,
+  "devDependencies": {
+    "@bbc/iplayer-web-page-objects": "^6.8.0",
+    "@bbc/iplayer-web-script-bundler": "^5.1.0",
+    "@bbc/iplayer-web-script-precompiler": "^2.1.0",
+    "@bbc/iplayer-web-webdriver": "^6.0.0",
+    "cheerio": "^0.22.0",
+    "eslint": "^4.19.1",
+    "eslint-config-iplayer-jsx": "^4.0.0",
+    "joi": "^13.4.0",
+    "jsdom": "^11.11.0",
+    "mocha": "^5.2.0",
+    "nock": "^9.0.13",
+    "sinon": "^2.4.0",
+    "speculate": "^1.7.1",
+    "supertest": "^3.0.0"
+  }
+}

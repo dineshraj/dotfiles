@@ -38,3 +38,5 @@ git clone git@github.com:bbc/iplayer-web-app-playback-scripts.git
 
 npm install -g bbc/cosmos-cli
 npm install -g @tviplayer/forge-release-cli
+
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
