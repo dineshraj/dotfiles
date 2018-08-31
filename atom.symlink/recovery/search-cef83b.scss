@@ -1,0 +1,16 @@
+.search {
+
+  &.react-selectize {
+
+    @include bp('med') {
+      margin: 0 78px 20px;
+      width: 670px;
+      max-width: 671px;
+    }
+  }
+
+  .simple-group-title {
+    font-weight: bold;
+  }
+
+}
