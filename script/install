@@ -12,3 +12,7 @@ find . -name install.sh | while read installer ; do sh -c "${installer}" ; done
 
 # set zsh as default
 chsh -s /bin/zsh
+
+# install shell integration for iterm2
+curl -L https://iterm2.com/shell_integration/zsh \
+-o ~/.iterm2_shell_integration.zsh

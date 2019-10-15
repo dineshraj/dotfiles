@@ -9,3 +9,5 @@ alias rmd='rm -rf'
 
 alias ..="cd .."
 alias ...="cd ../.."
+
+alias begin="git checkout master && git pull && npm ci && npm t"

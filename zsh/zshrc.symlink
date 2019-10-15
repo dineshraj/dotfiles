@@ -130,3 +130,13 @@ unsetopt correct
 
 ### Added by IBM Cloud CLI
 # source /usr/local/Bluemix/bx/zsh_autocomplete
+
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# add badges for iterm
+iterm2_print_user_vars() {
+  iterm2_set_user_var gitBranch $((git branch 2> /dev/null) | grep \* | cut -c3-)
+  iterm2_set_user_var directory $(PWD | rev | cut -d '/' -f 1 | rev)
+}
+
