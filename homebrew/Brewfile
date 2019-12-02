@@ -10,6 +10,7 @@ brew install chromedriver
 brew install stunnel
 brew install ffmpeg
 brew install node
+brew install gpg
 
 brew cask install ngrok
 brew cask install google-chrome
