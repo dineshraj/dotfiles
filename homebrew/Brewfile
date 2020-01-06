@@ -11,10 +11,10 @@ brew install stunnel
 brew install ffmpeg
 brew install node
 brew install gpg
+brew install fzf
 
 brew cask install ngrok
 brew cask install google-chrome
-brew cask install atom
 brew cask install visual-studio-code
 brew cask install sublime-text
 brew cask install iterm2
@@ -27,8 +27,6 @@ brew cask install calibre
 brew cask install sip
 brew cask install cyberduck
 brew cask install dropbox
-brew cask install rowanj-gitx
-brew cask install goofy
 brew cask install spectacle
 brew cask install vlc
 brew cask install whatsapp
@@ -38,3 +36,5 @@ brew cask install steam
 brew cask install cyberduck
 brew cask install alfred
 brew cask install caskroom/cask/openemu
+
+$(brew --prefix)/opt/fzf/install

@@ -142,3 +142,5 @@ iterm2_print_user_vars() {
 
 export PATH=/usr/local/lib/ruby/gems/2.5.0/bin:$PATH
 export GPG_TTY=$(tty)
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
