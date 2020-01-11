@@ -35,6 +35,6 @@ group_lazy_load() {
 }
 
 export NVM_DIR=~/.nvm
-group_lazy_load /usr/local/Cellar/nvm/0.33.11/nvm.sh nvm node npm
+group_lazy_load /usr/local/Cellar/nvm/0.33.11/nvm.sh nvm node npm npx 
 
 unset -f group_lazy_load
