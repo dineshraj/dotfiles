@@ -140,7 +140,11 @@ iterm2_print_user_vars() {
   iterm2_set_user_var directory $(PWD | rev | cut -d '/' -f 1 | rev)
 }
 
-export PATH=/usr/local/lib/ruby/gems/2.5.0/bin:$PATH
+export GOPATH=$HOME/web/tutorials+projects/go
+export GOBIN=$HOME/go/bin
+
+export PATH=/usr/local/lib/ruby/gems/2.5.0/bin:$PATH:$GOBIN
 export GPG_TTY=$(tty)
+
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
